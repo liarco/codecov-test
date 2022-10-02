@@ -9,6 +9,8 @@ describe("Test", function () {
 
       await contract.doStuff(42);
       expect((await contract.getNumber()).toNumber()).eq(42);
+
+      await expect(contract.doStuff(0)).revertedWithCustomError(contract, "CustomError");
     });
   });
 });
