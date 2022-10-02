@@ -8,9 +8,9 @@ describe("Test", function () {
       const contract = await ContractFactory.deploy();
 
       await contract.doStuff(42);
-      //expect((await contract.getNumber()).toNumber()).eq(42);
+      expect((await contract.getNumber()).toNumber()).eq(42);
 
-      //await expect(contract.doStuff(0)).revertedWithCustomError(contract, "CustomError");
+      await expect(contract.doStuff(0)).revertedWithCustomError(contract, "CustomError");
     });
   });
 });
