@@ -1,0 +1,13 @@
+{
+  "name": "@liarco/codecov-test",
+  "description": "Just a test...",
+  "author": "Marco Lipparini <developer@liarco.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liarco/codecov-test.git"
+  },
+  "scripts": {
+    "build": "cd ./nextjs; yarn; yarn build; yarn next export"
+  }
+}
